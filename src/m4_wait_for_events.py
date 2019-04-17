@@ -348,7 +348,7 @@ def prime_gap(m):
       :type m: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # IMPLEMENTATION REQUIREMENT:
@@ -356,6 +356,27 @@ def prime_gap(m):
     #       (that you implemented) appropriately.
     # -------------------------------------------------------------------------
 
+    # prime1 = 2
+    # prime2 = next_prime(prime1)
+    # gap = prime2 - prime1
+    #
+    # while True:
+    #     if gap >= m:
+    #         break
+    #
+    #     prime1 = next_prime(prime1+1)
+    #
+    # print(prime1, prime2, gap)
+    #
+    # return prime1
+
+    prime1 = 2
+    while True:
+        if is_prime(prime1) == True:
+            if next_prime(prime1 + 1) - prime1 >= m:
+                return prime1
+
+        prime1 = prime1 + 1
 
 def run_test_wait_for_sum_of_cubes():
     """ Tests the   wait_for_sum_of_cubes    function. """
