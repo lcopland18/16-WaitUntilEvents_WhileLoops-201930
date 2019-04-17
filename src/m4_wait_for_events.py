@@ -511,7 +511,7 @@ def wait_for_sum_of_cubes(x):
       :type x: float  [or an int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPLEMENTATION REQUIREMENT:
@@ -521,6 +521,27 @@ def wait_for_sum_of_cubes(x):
     # (or look up) a formula that would allow a faster computation.
     # But no fair using any such approach in this implementation.
     # -------------------------------------------------------------------------
+
+    # integer = 1
+    # sum = 0
+    # while True:
+    #     if sum <= x:
+    #         if sum + (integer ** 3 ) >= x:
+    #             return integer
+    #
+    #         else:
+    #             sum += integer
+    #             integer += 1
+
+    integer = 1
+    sum = 0
+
+    while True:
+        sum += integer ** 3
+        if sum >= x:
+            return integer
+        integer += 1
+
 
 
 # -----------------------------------------------------------------------------
