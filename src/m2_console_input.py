@@ -6,6 +6,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          and Lauren Copland.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -133,10 +134,21 @@ def input_it_all():
          Peace & Love.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
+    floating = float(input("Enter a positive floating point number: "))
+    integer = int(input("Enter a positive integer: "))
+    string = str(input("Enter a string: "))
+
+    root = math.sqrt(floating)
+
+    for k in range(integer):
+        print(root)
+
+    for k in range(integer):
+        print(string)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
